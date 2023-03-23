@@ -3,13 +3,7 @@ from Modelos.Segurado import Segurado
 
 
 class Apolice:
-    def __init__(self,numero,tipo,valorPremio,valorBeneficio,segurado,corretor,vigencia,dataCriacao,status):
-
-        if not isinstance(segurado,Segurado):
-            raise TypeError("Segurado deve ser do tipo Segurado")
-        
-        if not isinstance(corretor,Corretor):
-            raise TypeError("Corretor deve ser do tipo Corretor")
+    def __init__(self,numero,tipo,valorPremio,valorBeneficio,segurado: Segurado,corretor: Corretor,vigencia,dataCriacao, status):
 
         self.__corretor = corretor
         self.__segurado = segurado

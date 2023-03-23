@@ -1,9 +1,12 @@
+from Modelos import Contato, Endereco
 from Modelos.Pessoa import Pessoa
+
 class Corretor(Pessoa):
 
-    def __init__(self,numeroSusep,nome,sobrenome,cpf,rg,data_nascimento,sexo,endereco,contato):
+    def __init__(self,numeroSusep,nome,sobrenome,cpf,rg,data_nascimento,sexo,endereco: Endereco,contato: Contato):
 
         self.__apolices = []
+
         self.__numeroSusep = numeroSusep
 
         Pessoa.__init__(self,nome,sobrenome,cpf,rg,data_nascimento,sexo,endereco,contato)
