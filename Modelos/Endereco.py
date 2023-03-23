@@ -9,3 +9,6 @@ class Endereco:
         self.__cidade = cidade
         self.__cep = cep
         self.__estado = estado
+
+    def getEnderecoFormatado(self):
+        return self.__rua + ", " + self.__numero + " - " + self.__bairro + " - " + self.__cidade + " - " + self.__estado
