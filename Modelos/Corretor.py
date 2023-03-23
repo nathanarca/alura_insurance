@@ -27,3 +27,9 @@ class Corretor(Pessoa):
 
     def getApolices(self):
         return self.__apolices
+    
+    def calcularComissao(self):
+        comissao = 0
+        for apolice in self.__apolices:
+            comissao += apolice.valorPremio * 0.01
+        return comissao
