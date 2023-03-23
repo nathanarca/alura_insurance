@@ -4,4 +4,4 @@ Python 3;
 PyTest;
 Jupyter;
 NumPy;
-Pandas;
+Pandas; 
