@@ -12,3 +12,6 @@ class Endereco:
 
     def getEnderecoFormatado(self):
         return self.__rua + ", " + self.__numero + " - " + self.__bairro + " - " + self.__cidade + " - " + self.__estado
+    
+    def __str__(self) -> str:
+        return "rua: " + self.__rua + " numero: " + self.__numero + " bairro: " + self.__bairro + " complemento: " + self.__complemento + " cidade: " + self.__cidade + " cep: " + self.__cep + " estado: " + self.__estado
