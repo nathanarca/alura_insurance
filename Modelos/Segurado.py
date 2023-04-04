@@ -8,3 +8,6 @@ class Segurado(Pessoa):
         Pessoa.__init__(self,nome,sobrenome,cpf,rg,data_nascimento,sexo,endereco,contato)
         
         self.__beneficiario = beneficiario
+
+    def __str__(self) -> str:
+        return super().__str__() + " beneficiario:" + str(self.__beneficiario)

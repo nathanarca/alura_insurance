@@ -9,10 +9,10 @@ class RepositorioSegurado:
         
         self.__segurados.append(segurado)
 
-    def listar(self):
+    def listar(self) -> list[Segurado]:
         return self.__segurados
 
-    def buscar_por_cpf(self, cpf): 
+    def buscar_por_cpf(self, cpf) -> Segurado: 
         for segurado in self.__segurados:
             if segurado.cpf == cpf:
                 return segurado
