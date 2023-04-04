@@ -17,6 +17,16 @@ class Corretor(Pessoa):
         Pessoa.__init__(self, nome, sobrenome, cpf, rg,
                         data_nascimento, sexo, endereco, contato)
 
+        self.__validar()
+
+    def __validar(self):
+        self.__validarNumeroSusep()
+
+    def __validarNumeroSusep(self):
+        start = "154146"
+        if (not self.__numeroSusep.startswith(start) or len(self.__numeroSusep) != 17):
+            raise Exception("Número Susep inválido")
+
     def adicionarApolice(self, apolice: Apolice):
         self.__apolices.append(apolice)
 
