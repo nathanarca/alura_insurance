@@ -1,6 +1,6 @@
 from Modelos.Segurado import Segurado
 
-class test_Segurado:
+class TestSegurado:
     def test_deve_retornar_nome_completo_segurado(self):
         
         segurado = Segurado("João", "Silva", "12345678910")
